@@ -48,6 +48,11 @@ angular.module('starter', ['ionic','starter.controllers'])
     //alert(window.localStorage["nombre"]);
     //tutzke.innerHTML = window.localStorage["nombre"];
     //var sharmuta = window.localStorage["nombre"];
+    $scope.aLaVerga = function (){
+      
+      $state.go('sidemenu.home');
+      location.reload(1);
+    }
     }
   )
 
