@@ -35,7 +35,7 @@ angular.module('starter', ['ionic','starter.controllers'])
 	  $scope.validar = function(){
 	  //aqui hacemos las valiaciones
 	  $scope.guardar();
-    location.reload(1);
+    //location.reload(1);
 	  $state.go('app');
 	  }
 	})
@@ -44,7 +44,10 @@ angular.module('starter', ['ionic','starter.controllers'])
 .controller('AppCtrl', function ($scope, $state){
 
     var tutzke = document.getElementById("tutzke");
-    tutzke.innerText = window.localStorage["nombre"];
+    $scope.allah = window.localStorage["nombre"];
+    //alert(window.localStorage["nombre"]);
+    //tutzke.innerHTML = window.localStorage["nombre"];
+    //var sharmuta = window.localStorage["nombre"];
     }
   )
 
