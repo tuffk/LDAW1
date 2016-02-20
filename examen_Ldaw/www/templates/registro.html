@@ -1,0 +1,28 @@
+<ion-view title="Registrate">
+    <ion-content scroll="true">
+
+<div class="list">
+  <label class="item item-input"> <!--Entrada-->
+    <span class="input-label" >Nombre</span> <!--texto-->
+      <input type="text" ng-model="password" ng-minlength="3" id="nombre">  <!--LINEA QUE VALIDA-->
+  </label>
+
+  <label class="item item-input"> 
+    <span class="input-label">Email</span> <!--texto-->
+      <input type="email" ng-model="email"> 
+  </label>
+  
+  <label class="item item-input">
+    <span class="input-label">Celular</span>
+      <input type="number" ng-model="telefono" ng-minlength="7"> 
+  </label>
+
+  <div class="padding">
+    <!--boton : -->
+    <button ng-click="validar()" ng-disabled="!email || !password || !telefono" class="button button-block button-positive">Acgfhghfhceder</button>
+  </div>
+</div>
+
+    </ion-content>
+</ion-view>
+
